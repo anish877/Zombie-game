@@ -16,6 +16,12 @@ this.chain = Constraint.create(options)
 World.add(world,this.chain)
 
 }
+release(){
+    this.chain.bodyA = null
+}
+attach(body){
+ this.chain.bodyA = body
+} 
 
 display()
 {
@@ -42,12 +48,6 @@ else{
     }
 
 }
-
-
-release(){
-    this.chain.bodyA = null
-}
-
 
 
 
